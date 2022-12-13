@@ -1,0 +1,28 @@
+version: "3"
+services:
+  mongo:
+    image: mongo:4.0.8
+    container_name: mongo
+    restart: always # unless-stopped
+    command: mongod --auth
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+      MONGODB_DATA_DIR: ${MONGODB_DATA_DIR}
+      MONDODB_LOG_DIR: ${MONDODB_LOG_DIR}
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodbdata:${MONGODB_DATA_DIR}
+  task7:
+    build: .
+    container_name: task7
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
+    environment:
+      FLASK_ENV: development
+volumes:
+  mongodbdata:
