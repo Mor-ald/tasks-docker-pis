@@ -7,10 +7,10 @@ curl 5.101.51.170:5000/
 
 ### Возможные скрипты для деплоя докер контейнера:
 
-- [Deploy a Python app to an Azure Web App](https://github.com/Mor-ald/task8_doker/blob/main/deploy/deploy_azure.yml)
-- [Deploy to IBM Cloud Kubernetes Service](https://github.com/Mor-ald/task8_doker/blob/main/deploy/deploy_ibm.yml)
-- [Deploy to OpenShift](https://github.com/Mor-ald/task8_doker/blob/main/deploy/deploy_openshift.yml)
-- [Build and Deploy to Cloud Run](https://github.com/Mor-ald/task8_doker/blob/main/deploy/deploy_cloudrun.yml)
+- [Deploy a Python app to an Azure Web App](https://github.com/Mor-ald/tasks-docker-pis/blob/task-8/deploy/deploy_azure.yml)
+- [Deploy to IBM Cloud Kubernetes Service](https://github.com/Mor-ald/tasks-docker-pis/blob/task-8/deploy/deploy_ibm.yml)
+- [Deploy to OpenShift](https://github.com/Mor-ald/tasks-docker-pis/blob/task-8/deploy/deploy_openshift.yml)
+- [Build and Deploy to Cloud Run](https://github.com/Mor-ald/tasks-docker-pis/blob/task-8/deploy/deploy_cloudrun.yml)
 
 <img width="737" alt="image" src="https://user-images.githubusercontent.com/72343402/205642928-5cb2ea41-1153-41d8-82b4-403623f15158.png">
 
